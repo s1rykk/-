@@ -65,3 +65,5 @@
 ![](screens/Services.png)		![](screens/Services2.png)
 
 
+## 3.Демонстрация работы функции UNION
+![](screens/UNION.png)
