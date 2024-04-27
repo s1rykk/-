@@ -32,7 +32,7 @@
 	Таблица Employees содержащая атрибуты:
 * EmployeeID(Айди сотрудника, настроен по умолчанию, int);
 * Name(Имя, varchar(255));
-* Surname(Фамилия, varchar(255);
+* Surname(Фамилия, varchar(255));
 * PhoneNumber(Номер телефона, varchar(255));
 * Email(Эл. почта, varchar(255));
 * Schedule(График работы, varchar(255));
@@ -63,3 +63,5 @@
 * EmployeeID(Айди сотрудника, int).
 
 ![](screens/Services.png)		![](screens/Services2.png)
+
+
