@@ -38,17 +38,23 @@
 * Schedule(График работы, varchar(255));
 * Gender(Пол, varchar(255)).
 
+![](screens/Employees1.png)		![](screens/Employees2.png)
+
 	Таблица Feedback содержащая атрибуты:
 * FeedbackID(Айди отзыва, настроен по умолчанию, int);
 * ClientID(Айди клиента, int);
 * ReviewText(Текст, text);
 * Rating(Рейтинг, int).
 
+![](screens/Feedback1.png)		![](screens/Feedback2.png)
+
 	Таблица Payments содержащая атрибуты:
 * PaymentID(Айди оплаты, настроен по умолчанию, int);
 * FeedbackID(Айди отзыва, int);
 * PaymentAmount(Сумма к оплате, decimal(10,2));
 * PaymentDateTime(Дата оплаты, date).
+
+![](screens/Payments1.png)		![](screens/Payments2.png)
 
 	Таблица Services содержащая атрибуты:
 * ServiceID(Айди стрижки, настроен по умолчанию, int);
