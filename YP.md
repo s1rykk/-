@@ -61,3 +61,5 @@
 * Description(Описание, text);
 * Price(Стоимость, decimal(10,2));
 * EmployeeID(Айди сотрудника, int).
+
+![](screens/Services.png)		![](screens/Services2.png)
