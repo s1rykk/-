@@ -8,6 +8,7 @@
 * Feedback(Отзывы);
 * Payments(Оплата);
 * Services(Данные о стрижках).
+![](screens/bazad.png)
 
 ## 2.1
 Таблица Appointments, содержащая атрибуты:
