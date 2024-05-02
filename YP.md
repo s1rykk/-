@@ -81,18 +81,37 @@ FROM Employees;
 
 ## 4. Демонстрация работы функции ORDER BY
 Сортировка данных. Я отсортировал стоимость стрижки по возрастанию.
+```
+SELECT Price, description
+FROM Services
+ORDER BY Price ASC
+```
+
 ![](screens/ORDER_BY.png)
 
 
 ## 5. Демонстрация работы функции HAVING
 Я отфильтровал результаты, где стоимость стрижки больше 25.
+```
+SELECT description, AVG(Price) AS Средняя_Стоимость FROM Services
+GROUP BY description
+HAVING Средняя_Стоимость > 25
+```
 
-![](screens/SELECT.png)
+![](screens/HAVING.png)
 
 
 ## 6. Демонстрация работы вложенных запросов
 ### 6.1. В SELECT
-Вывел клиента, чье имя Дима из таблицы Клиентов
+Вывел клиента, чье имя Roma из таблицы Клиентов
+```
+SELECT name
+FROM Clients
+WHERE name = 
+	(SELECT name
+     from Clients
+     WHERE Name = 'Roma');
+```
 
 ![](screens/SELECT.png)
 
