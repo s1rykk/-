@@ -68,6 +68,14 @@
 
 ## 3. Демонстрация работы функции UNION
 Объединение двух наборов строк. Я объединил Name и Surname из таблицы Clients.
+```
+SELECT Name AS Имя_И_Фамилия_Клиента
+FROM Clients
+UNION
+SELECT Surname AS Имя_И_Фамилия_Клиента
+FROM Employees;
+```
+
 ![](screens/UNION.png)
 
 
