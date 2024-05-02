@@ -46,7 +46,7 @@
 * ReviewText(Текст, text);
 * Rating(Рейтинг, int).
 
-![](screens/Feedback1.png)		![](screens/Feedback2.png)
+![](screens/Feedback1.png)   ![](screens/Feedback2.png)
 
 Таблица Payments содержащая атрибуты:
 * PaymentID(Айди оплаты, настроен по умолчанию, int);
