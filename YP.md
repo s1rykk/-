@@ -116,3 +116,12 @@ WHERE name =
 ![](screens/SELECT.png)
 
 ### 6.1. В WHERE
+Вывел имена клиентов, чье имя не заканчивается на букву 'а'
+```
+SELECT Name
+FROM Clients
+WHERE Name NOT LIKE '%a'
+```
+
+![](screens/WHERE.png)
+
