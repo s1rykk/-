@@ -140,6 +140,36 @@ FROM Services
 
 ![](screens/AGREGATE.png)
 
+### 7.2. Ранжирующие функции
+
+```
+SELECT serviceid,
+	description,
+	price,
+	ROW_NUMBER() OVER(PARTITION BY description ORDER BY price) AS 'row_number',
+	RANK() OVER(PARTITION BY description ORDER BY price) AS 'rank',
+	DENSE_RANK() OVER(PARTITION BY description ORDER BY price) AS 'dense_rank'
+FROM Services;
+```
+
+![](screens/RANGE.png)
+
+### 7.3. Функции смещения
+
+```
+SELECT serviceid,
+	description,
+	price,
+	LAG(price) OVER(PARTITION BY description ORDER BY price) AS 'lag',
+	LEAD(price) OVER(PARTITION BY description ORDER BY price) AS 'lead',
+	FIRST_VALUE(price) OVER(PARTITION BY description ORDER BY price) AS 'first_value',
+	LAST_VALUE(price) OVER(PARTITION BY description ORDER BY price) AS 'last_value'
+FROM Services;
+```
+
+![](screens/SMESH.png)
+
+
 ## 8. Демонстрация работы JOIN'ов:
 ### 8.1. INNER JOIN
 Возвращает те строки, для которых в обеих таблицах выполняется условие соединения.
