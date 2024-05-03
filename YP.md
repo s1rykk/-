@@ -139,3 +139,62 @@ FROM Services
 ```
 
 ![](screens/AGREGATE.png)
+
+## 8. Демонстрация работы JOIN'ов:
+### 8.1. JOIN
+В этом запросе я соединил имена клиентов и их отзывы
+```
+SELECT Name, reviewtext
+FROM Clients JOIN Feedback ON Feedback.ClientID = Clients.ClientID
+```
+
+![](screens/JOIN.png)
+
+### 8.2. LEFT JOIN
+
+```
+SELECT Name, reviewtext
+FROM Clients LEFT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
+```
+
+![](screens/LEFTJOIN.png)
+
+### 8.3. RIGHT JOIN
+
+```
+SELECT Name, reviewtext
+FROM Clients RIGHT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
+```
+
+![](screens/RIGHTJOIN.png)
+
+### 8.4. FULL JOIN
+
+```
+SELECT Name, reviewtext
+FROM Clients FULL JOIN Feedback ON Feedback.ClientID = Clients.ClientID
+```
+
+![](screens/FULLJOIN.png)
+
+### 8.5. CROSS JOIN
+
+```
+SELECT Name, reviewtext
+FROM Clients CROSS JOIN Feedback ON Feedback.ClientID = Clients.ClientID
+```
+
+![](screens/CROSSJOIN.png)
+
+## 9. Демонстрация работы CASE
+
+```
+SELECT Name,
+	CASE
+    	WHEN Gender = 'male' THEN 'Мужчина'
+        ELSE 'Женщина'
+    END AS Пол 
+FROM Clients
+```
+
+![](screens/CASE.png)
