@@ -141,8 +141,8 @@ FROM Services
 ![](screens/AGREGATE.png)
 
 ## 8. Демонстрация работы JOIN'ов:
-### 8.1. JOIN
-В этом запросе я соединил имена клиентов и их отзывы
+### 8.1. INNER JOIN
+Возвращает те строки, для которых в обеих таблицах выполняется условие соединения.
 ```
 SELECT Name, reviewtext
 FROM Clients JOIN Feedback ON Feedback.ClientID = Clients.ClientID
@@ -151,7 +151,7 @@ FROM Clients JOIN Feedback ON Feedback.ClientID = Clients.ClientID
 ![](screens/JOIN.png)
 
 ### 8.2. LEFT JOIN
-
+Возвращает строки, содержащие данные из левой таблицы, даже если в правой таблице нет совпадающих строк.
 ```
 SELECT Name, reviewtext
 FROM Clients LEFT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
@@ -160,7 +160,7 @@ FROM Clients LEFT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
 ![](screens/LEFTJOIN.png)
 
 ### 8.3. RIGHT JOIN
-
+Возвращает строки, содержащие данные из правой таблицы, даже если в левой таблице нет совпадающих строк.
 ```
 SELECT Name, reviewtext
 FROM Clients RIGHT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
@@ -169,7 +169,7 @@ FROM Clients RIGHT JOIN Feedback ON Feedback.ClientID = Clients.ClientID
 ![](screens/RIGHTJOIN.png)
 
 ### 8.4. FULL JOIN
-
+Возвращает строки, содержащие данные из обеих таблиц.
 ```
 SELECT Name, reviewtext
 FROM Clients FULL JOIN Feedback ON Feedback.ClientID = Clients.ClientID
@@ -178,7 +178,7 @@ FROM Clients FULL JOIN Feedback ON Feedback.ClientID = Clients.ClientID
 ![](screens/FULLJOIN.png)
 
 ### 8.5. CROSS JOIN
-
+Возвращает строки, содержащие все возможные комбинации левой и правой частей соединения.
 ```
 SELECT Name, reviewtext
 FROM Clients CROSS JOIN Feedback ON Feedback.ClientID = Clients.ClientID
@@ -187,7 +187,7 @@ FROM Clients CROSS JOIN Feedback ON Feedback.ClientID = Clients.ClientID
 ![](screens/CROSSJOIN.png)
 
 ## 9. Демонстрация работы CASE
-
+Оператор позволяет осуществить проверку условий и возвратить в зависимости от выполнения того или иного условия тот или иной результат.
 ```
 SELECT Name,
 	CASE
@@ -198,3 +198,5 @@ FROM Clients
 ```
 
 ![](screens/CASE.png)
+
+## 10. Демонстрация работы WITH
