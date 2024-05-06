@@ -230,3 +230,11 @@ FROM Clients
 ![](screens/CASE.png)
 
 ## 10. Демонстрация работы WITH
+Используется для создания временных таблиц, которые можно использовать внутри запросов (trap).
+```
+WITH trap AS
+(SELECT Name, Email FROM Clients)
+SELECT * FROM trap
+```
+
+![](screens/WITH.png)
