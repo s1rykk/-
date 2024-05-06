@@ -141,7 +141,7 @@ FROM Services
 ![](screens/AGREGATE.png)
 
 ### 7.2. Ранжирующие функции
-
+Возвращают значение для каждой строки группы в результирующем наборе данных.
 ```
 SELECT serviceid,
 	description,
@@ -155,7 +155,7 @@ FROM Services;
 ![](screens/RANGE.png)
 
 ### 7.3. Функции смещения
-
+Функции, которые позволяют перемещаться и обращаться к разным строкам в окне.
 ```
 SELECT serviceid,
 	description,
